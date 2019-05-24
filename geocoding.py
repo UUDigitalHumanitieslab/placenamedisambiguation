@@ -9,13 +9,14 @@ class Geocoder:
     is not present as an environment variable. Propagates geocoder's/requests' requests.exceptions.ConnectionError.  
     '''
 
-    def __init__(self, named_entities, geonames_username):
+    def __init__(self, named_entities, language):
         if not "GEONAMES_USERNAME" in os.environ:
             raise EnvironmentError("GEONAMES_USERNAME is not present as an environment variable. Please export it")      
         if not "GOOGLE_API_KEY" in os.environ:
             raise EnvironmentError("GOOGLE_API_KEY is not present as an environment variable. Please export it")
         
         self.named_entities = named_entities
+        self.language = language
         self.geonames_username = os.getenv('GEONAMES_USERNAME')
 
     def geocode_locations(self):
@@ -63,8 +64,8 @@ class Geocoder:
 
     def set_geocode_from_google(self, session, named_entity):
         place_name = named_entity['ne']
-        g = geocoder.google(place_name, session=session)
-
+        g = geocoder.google(place_name, session=session, method='places', language=self.language)
+        
         if (g.ok):
             named_entity['google_lat'] = g.lat
             named_entity['google_lng'] = g.lng

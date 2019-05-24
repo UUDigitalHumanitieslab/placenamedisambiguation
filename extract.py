@@ -85,8 +85,8 @@ def extract_entities(title, text, language):
     return r.json()
 
 
-def add_geocodes(entities):
-    g = Geocoder(entities['text']['entities'], 'alexhebing')
+def add_geocodes(args, entities):
+    g = Geocoder(entities['text']['entities'], args.language)
 
     try:
         g.geocode_locations()
@@ -105,7 +105,7 @@ def collect_data(args):
                     entities = extract_entities('test', text, args.language)
 
                     print("adding geocodes to locations from '{}'".format(filename))
-                    add_geocodes(entities)
+                    add_geocodes(args, entities)
 
                     export(args, filename, text, entities)
                     print("results for '{}' exported".format(filename))
