@@ -32,7 +32,7 @@ def language(input):
 
 def parseArguments(sysArgs):
     parser = argparse.ArgumentParser(
-        description='Extract named entities all files in a folder')
+        description='Extract named entities from all files in a folder with a certain extension')
 
     parser.add_argument(
         '--dir',
@@ -71,7 +71,7 @@ def extract_entities(title, text, language):
                 "stanford",
                 "spotlight"
             ],
-            "other_packages_min": 4
+            "other_packages_min": 3
         }
     }
 
@@ -113,10 +113,11 @@ def collect_data(args):
 
 # Entry point
 def main(sysArgs):
+    args = parseArguments(sysArgs)
+    
     check_env_var("GEONAMES_USERNAME")
     check_env_var("GOOGLE_API_KEY")
-
-    args = parseArguments(sysArgs)
+    
     collect_data(args)
 
 
