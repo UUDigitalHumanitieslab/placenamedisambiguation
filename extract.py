@@ -7,6 +7,7 @@ import json
 
 from geocoding import Geocoder
 from config import MULTI_NER_URL
+from helpers.bio_converter import convert_to_bio
 
 # Input validation
 def dir(path):
@@ -152,48 +153,6 @@ def write_html_version(folder, filename, text, entities):
 
 def write_as_bio(folder, filename, text, entities):
     convert_to_bio(text, entities)
-
-
-def convert_to_bio(text, entities):
-    bio_tagged = []
-    
-    prev_entity_index = 0
-
-    for entity in entities:
-        index = entity['pos'] 
-        entity_to_end = len(text) - index + 1
-
-        non_entities = text[prev_entity_index:-entity_to_end]
-        
-        for word in non_entities.split():
-            bio_tagged.append("{} O".format(word))
-
-        tag = translate_to_bio(entity['type'])
-        entity_text = entity['ne'].split()
-        
-        if len(entity_text) > 1:
-            for i in range(len(entity_text)):
-                if i == 0:
-                    bio_tagged.append("{} B-{}".format(entity['ne'], tag))
-                else:
-                    bio_tagged.append("{} I-{}".format(entity['ne'], tag))
-        else:
-            bio_tagged.append("{} B-{}".format(entity['ne'], tag))
-
-    return bio_tagged
-
-def translate_to_bio(entity_type):
-    if (entity_type == 'LOCATION'):
-        return 'LOC'
-    if (entity_type == 'PERSON'):
-        return 'PER'
-    if (entity_type == 'ORGANIZATION'):
-        return 'ORG'
-    return 'OTHER'
-
-
-    
-
 
 
 # Helpers
