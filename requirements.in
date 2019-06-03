@@ -2,3 +2,4 @@ Jinja2
 geocoder
 requests
 argparse
+pytest
