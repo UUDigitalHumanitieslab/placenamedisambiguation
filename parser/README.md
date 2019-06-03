@@ -1,0 +1,143 @@
+# `parser.py`
+
+`parser.py` is part of [a pipeline of scripts](../README.md). As it name suggests, it can be used to parse XML files into plain .txt files that contain the text content from the desired elements. In essence it is a wrapper around Python's [ElementTree XML API](https://docs.python.org/2/library/xml.etree.elementtree.html), allowing for some very basic text extraction options.
+
+## HTML entities
+
+`parser.py`, before loading the XML from the files into ElementTree to start looking for the texts you need, unescapes any HTML characters that might be in the document. For example, if the document contains the text 'Itali&euml', this will be converted to 'Italië' before the XML is loaded. This is dome to prevent parsing errors from ElementTree.
+
+## Command line arguments
+
+| Command              | Explanation                                                                                                                                     |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--help`             | The most basic command, which displays some information on the script's options. Not as detailed as this README.                                |
+| `--dir`              | The root directory that your input files are in. Note that the script will look for files in all subfolders as well.                            |
+| `--ext`              | The extension of the files to be included. Defaults to '.xml'                                                                                   |
+| `--out`              | The directory where to write the output. Has to exist, i.e. will not be created. The script will not start as long as the folder doesn't exist. |
+| `--route_to_content` | The most interesting and complex option for this script. More details below                                                                     |
+
+
+## `--route_to_content`
+
+The route (i.e. path) to the node the textual content needs to be extracted from. The format of this route should be as follows: `tagname#tagname` or `tagname#tagname[attribute]`. Note that single tags are also allowed (e.g. `tagname[attribute]` will work).
+
+### Examples
+
+Given this XML:
+
+```xml
+<parent>
+    <content>Text</content>
+</parent>
+```
+
+You can extract the text by supplying the following argument to the script: `--route_to_content parent#content`
+
+
+This would also work if they are multiple childnodes in parent:
+
+```xml
+<parent>
+    <content>Text</content>
+    <content>Text</content>
+    <content>Text</content>
+</parent>
+```
+
+In this case, the textual content will be extracted and joined (with a space in between). Issueing the `--route_to_content parent#content` argument would result in the following output: 'Text Text Text'.
+
+Note that it is also allowed to leave `parent` out of the route in above examples, simply supplying `content` would also work.
+
+#### more complex XML structures
+
+If your XML is a bit more complex than the examples above, you need to be very precise with the path (a.k.a. route) you offer. Consider for example this XML:
+
+```xml
+<parent>
+    <child>
+        <grandchild>
+            <content>Text</content>
+        </grandchild>
+    </child>
+</parent>
+```
+
+If you now provide `child#content`, the script won't find anything. You should either do `child#grandchild#content`, `grandchild#content`, or even `content`. However, the last option has it's own cautions:
+
+```xml
+<parent>
+    <child>
+        <grandchild>
+            <content>Text</content>
+        </grandchild>
+    </child>
+    <anotherchild>
+        <grandchild>
+            <content>Text2</content>
+        </grandchild>
+    </anotherchild>
+</parent>
+```
+
+If you now provide `content`, both texts will be found, resulting in the output 'Text Text2'. If you need either one but not both, be precise in the route you supply to the script.
+
+#### attributes
+
+But what if the content is in an element's attribute? For example:
+
+```xml
+<parent>
+    <child content='Text'></child>
+</parent>
+```
+
+Provide the following route: `child[content]`. This also works if multiple child nodes with content attribute exist. Given
+
+```xml
+<parent>
+    <child content='Text'></child>
+    <child content='Text2'></child>
+    <child content='Text3'></child>
+</parent>
+```
+
+The output of `child[content]` will be `Text Text2 Text3'.
+
+#### Wildcard (`*`)
+
+Consider the following XML:
+
+```xml
+<parent>
+    <child>
+        <sibling1>
+            <content>Text</content>
+        </sibling1>
+        <sibling2>
+            <content>Text</content>
+        </sibling2>
+    </child>
+</parent>
+```
+
+To extract the content here, you could use a wildcard:
+`child#*#content`.
+
+#### Xml namespaces
+
+Beware of xml namespaces! If a namespace applies to the tag you want to extract, you have add it in front of the tagname. For example:
+
+```xml
+<parent xmlns='http://any.namespace.you/need'>
+    <child content='Text'></child>
+    <child content='Text2'></child>
+    <child content='Text3'></child>
+</parent>
+```
+
+If you simply provide `child[content]` the script will NOT find anything! Since the parent declares a namespace, all children belong to this namespace too. Therefore, you'll need to provide: `{http://any.namespace.you/need}tagname`.
+
+#### Valid routes
+
+- do not contain empty elements (i.e. `##` is not allowed)
+- has an attribute only in the last element (i.e. `child[attribute]#grandchild` is not allowed)
