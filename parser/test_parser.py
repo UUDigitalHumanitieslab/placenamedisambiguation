@@ -78,6 +78,25 @@ def test_collect_text_multiple_text_attributes():
     assert actual == "TEXT TEXT2"
 
 
+def test_collect_text_complex_structure():
+    xml = ET.fromstring("""<root>
+                            <parent>
+                                <child>
+                                    <grandchild>
+                                        <content>Text</content>
+                                    </grandchild>
+                                </child>
+                                <anotherchild>
+                                    <grandchild>
+                                        <content>Text2</content>
+                                    </grandchild>
+                                </anotherchild>
+                            </parent>
+                        </root>""")
+    actual = collect_text(xml, 'content')
+    assert actual == "Text Text2"
+
+
 def test_collect_text_complex_structure_wildcard():
     xml = ET.fromstring("""<root>
                             <parent>    
@@ -92,6 +111,25 @@ def test_collect_text_complex_structure_wildcard():
     actual = collect_text(xml, 'parent#*#contentnode[content]')
     assert actual == "TEXT TEXT2"
 
+
+def test_collect_text_nonexisting_in_route():
+    xml = ET.fromstring(
+        '<root><child><contentnode>TEXT</contentnode></child></root>')
+    actual = collect_text(xml, 'nonexisting')
+    assert actual == ""
+
+
+def test_collect_text_nonsense_in_route():
+    xml = ET.fromstring(
+        '<root><child><contentnode>TEXT</contentnode></child></root>')
+    
+    with pytest.raises(SystemExit) as pytest_wrapped_e:
+        collect_text(xml, '@#!')
+
+    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.value.code == 1
+
+
 @pytest.mark.xfail(raises=ET.ParseError)
 def test_collect_text_html_character():
     '''
@@ -105,23 +143,26 @@ def test_collect_text_html_character():
 
 
 def test_extract_text_europeana_one_textline():
-    actual = extract_text(os.path.join(basepath(),"test_files/europeana_one_textline.xml"),
+    actual = extract_text(os.path.join(basepath(), "test_files/europeana_one_textline.xml"),
                           '{http://schema.ccs-gmbh.com/ALTO}string[content]')
     assert actual == "Indien men Italië in zijn geheel kon neutraliseren ,"
 
 
 def test_extract_text_europeana_one_textbox():
     print(os.path.join(basepath(), "test_files/europeana_one_textbox.txt"))
-    
+
     with open(os.path.join(basepath(), "test_files/europeana_one_textbox.txt"), "r") as txt:
         expected = txt.read()
     actual = extract_text(os.path.join(basepath(), "test_files/europeana_one_textbox.xml"),
                           '{http://schema.ccs-gmbh.com/ALTO}string[content]')
     assert actual == expected
 
+
 def test_extract_text_icabish():
-    actual = extract_text(os.path.join(basepath(),"test_files/icab-ish.xml"), 'TEXT')
+    actual = extract_text(os.path.join(
+        basepath(), "test_files/icab-ish.xml"), 'TEXT')
     assert actual == "Some text to test"
+
 
 def basepath():
     return os.path.dirname(os.path.realpath(__file__))

@@ -66,6 +66,7 @@ def parseArguments(sysArgs):
     parser.add_argument(
         '--route_to_content',
         dest='route',
+        required=True,
         help="""The route (i.e. path) to the node the textual content needs to be extracted from. 
                 To extract the content from all 'content' nodes that are direct children of 'parent', 
                 provide 'parent#content'. If the content is in an attribute, you can do: 
@@ -85,13 +86,15 @@ def parseArguments(sysArgs):
 
     return parsedArgs
 
+def fatal(message):
+    print(message)
+    sys.exit(1)
+
 ###
 # Do the work
 ###
 def main(sysArgs):
     args = parseArguments(sysArgs)
-
-    print(args)
 
     for folder, subs, files in os.walk(args.root_dir):
         for filename in files:
@@ -118,7 +121,11 @@ def collect_text(xml, route_to_text):
     skip_first = xml.tag == route_to_text.split('#')[0]
 
     route = parse_route(route_to_text, skip_first)
-    nodes_with_text = xml.findall(route['query'])
+    
+    try:
+        nodes_with_text = xml.findall(route['query'])
+    except SyntaxError:
+        fatal("Your route contains invalid syntax. Please review it and try again.")
 
     text = []
 
