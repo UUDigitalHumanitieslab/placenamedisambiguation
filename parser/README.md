@@ -1,10 +1,6 @@
 # `parser.py`
 
-`parser.py` is part of [a pipeline of scripts](../README.md). As it name suggests, it can be used to parse XML files into plain .txt files that contain the text content from the desired elements. In essence it is a wrapper around Python's [ElementTree XML API](https://docs.python.org/2/library/xml.etree.elementtree.html), allowing for some very basic text extraction options.
-
-## HTML entities
-
-`parser.py`, before loading the XML from the files into ElementTree to start looking for the texts you need, unescapes any HTML characters that might be in the document. For example, if the document contains the text 'Itali&euml', this will be converted to 'Italië' before the XML is loaded. This is dome to prevent parsing errors from ElementTree.
+`parser.py` is part of [a pipeline of scripts](../README.md). As it name suggests, it can be used to parse XML and HTML files into plain .txt files that contain the text content from the desired elements. In essence it is a wrapper around [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), allowing for some very basic text extraction options. Under the hood it utilizes BeautifulSoup's HTML parser, making it a very generous (XML) parser that doesn't care about namespaces and allows for HTML entities in the (XML) documents.
 
 ## Command line arguments
 
@@ -123,19 +119,6 @@ Consider the following XML:
 To extract the content here, you could use a wildcard:
 `child#*#content`.
 
-#### Xml namespaces
-
-Beware of xml namespaces! If a namespace applies to the tag you want to extract, you have add it in front of the tagname. For example:
-
-```xml
-<parent xmlns='http://any.namespace.you/need'>
-    <child content='Text'></child>
-    <child content='Text2'></child>
-    <child content='Text3'></child>
-</parent>
-```
-
-If you simply provide `child[content]` the script will NOT find anything! Since the parent declares a namespace, all children belong to this namespace too. Therefore, you'll need to provide: `{http://any.namespace.you/need}tagname`.
 
 #### Valid routes
 

@@ -3,3 +3,4 @@ geocoder
 requests
 argparse
 pytest
+beautifulsoup4

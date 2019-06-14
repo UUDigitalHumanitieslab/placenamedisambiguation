@@ -1,12 +1,14 @@
 import argparse
 import os
 import sys
-import xml.etree.ElementTree as ET
-import html
+
+from bs4 import BeautifulSoup
 
 ###
 #  Input validation
 ###
+
+
 def route(input):
     parts = input.split('#')
     for index in range(len(parts)):
@@ -15,11 +17,11 @@ def route(input):
 
         if not part:
             raise argparse.ArgumentTypeError(
-            "route '{}' may not contain empty elements.".format(input))
+                "route_to_content '{}' may not contain empty elements.".format(input))
 
         if not is_last and '[' in part:
             raise argparse.ArgumentTypeError(
-            "route '{}' may only contain an attribute in the last element.".format(input))
+                "route_to_content '{}' may only contain an attribute in the last element.".format(input))
 
     return input
 
@@ -40,7 +42,7 @@ def extension(input):
 
 def parseArguments(sysArgs):
     parser = argparse.ArgumentParser(
-        description='Extract text only from I-CAB corpus. Produces txt files with the plain text.')
+        description='Extract textual content from XML or HTML to plain text files.')
 
     parser.add_argument(
         '--dir',
@@ -67,24 +69,22 @@ def parseArguments(sysArgs):
         '--route_to_content',
         dest='route',
         required=True,
-        help="""The route (i.e. path) to the node the textual content needs to be extracted from. 
-                To extract the content from all 'content' nodes that are direct children of 'parent', 
-                provide 'parent#content'. If the content is in an attribute, you can do: 
+        help="""The route (i.e. path) to the node the textual content needs to be extracted from.
+                To extract the content from all 'content' nodes that are direct children of 'parent',
+                provide 'parent#content'. If the content is in an attribute, you can do:
                 'tagname[attributename]' (note that these are only allowed in the last element of the route).
 
                 A route cannot contain empty elements (i.e. ## is not allowed), but you can provide wildcards.
                 If, for example, you need to extract text from a node 'text' that lives in 'sibling1' and 'sibling2',
-                which are both direct children of 'parent', you can provide 'parent#*#text'.
-                
-                Beware of namespaces! If a namespace applies to the tag you want to extract, you should add 
-                it to the tagname. For example: '{http://any.namespace.you/need}tagname'. 
-                
+                which are both direct children of 'parent', you can provide 'parent#*#text'.                
+
                 More info and examples in the README""",
         type=route)
 
     parsedArgs = parser.parse_args()
 
     return parsedArgs
+
 
 def fatal(message):
     print(message)
@@ -93,66 +93,78 @@ def fatal(message):
 ###
 # Do the work
 ###
+
+
 def main(sysArgs):
     args = parseArguments(sysArgs)
 
     for folder, subs, files in os.walk(args.root_dir):
         for filename in files:
             if filename.endswith(args.extension):
-                text = extract_text(os.path.join(folder, filename), args.route)
                 new_name = filename.replace(args.extension, '.txt')
-                print("extracting '{}' to '{}'".format(os.path.join(
-                    folder, filename), os.path.join(args.output_folder, new_name)))
-                write_to_file(args.output_folder, new_name, text)
+                
+                if not os.path.exists(os.path.join(args.output_folder, new_name)):
+                    print("Processing '{}'".format(filename))
+                    text = extract_text(os.path.join(folder, filename), args.route)
+                    write_to_file(args.output_folder, new_name, text)
 
 
 def extract_text(file_path, route_to_text):
-    # first unescape HTML if it is present
-    with open(file_path, 'r') as file:
-        xml = file.read()
-    html_unescaped = html.unescape(xml)
-    root = ET.fromstring(html_unescaped)
-
-    return collect_text(root, route_to_text)
-
-
-def collect_text(xml, route_to_text):
-    # if the route contains the root tag we need to skip it
-    skip_first = xml.tag == route_to_text.split('#')[0]
-
-    route = parse_route(route_to_text, skip_first)
-    
+    '''
+    Extract the desired text content from a file containing HTML or XML.
+    '''
     try:
-        nodes_with_text = xml.findall(route['query'])
+        with open(file_path, 'r') as file:
+            soup = BeautifulSoup(file, features="html.parser")
+    except UnicodeDecodeError as e:
+        print("Error when decoding '{}' More info: {}".format(file_path, e))
+        exit(1)
+
+    return collect_text(soup, route_to_text)
+
+
+def collect_text(soup, route_to_text):
+    '''
+    Collect the text content from a BeautifulSoup instance based on a route.
+    '''
+    parsed_route = parse_route(route_to_text)
+
+    try:
+        elements = soup.select(parsed_route['query'])
     except SyntaxError:
         fatal("Your route contains invalid syntax. Please review it and try again.")
 
+    return get_text(elements, parsed_route['attr'])
+
+
+def get_text(elements, attribute):
+    '''
+    Get the text from a set of HTML or XML elements.
+
+    Keyword arguments:
+        elements -- The set of elements containg the text content.
+        attribute -- The name of the attribute (of an element) that contains the text content. 
+            Can be 'None' if the text is not in an attribute.
+    '''
     text = []
 
-    for node in nodes_with_text:
-        if not route['attr'] is None:
-            text.append(node.attrib[route['attr']])
+    for elem in elements:
+        if not attribute is None:
+            text.append(elem.attrs[attribute])
         else:
-            text.append(node.text)
+            text.append(elem.text)
 
     return ' '.join(text)
 
 
-def parse_route(route, skip_first):
+def parse_route(route):
     '''
-    Parses a route of format 'node#childnode#childnode[attribute]'
-    into XPATH query
-
-    actual = xml.findall(".//child/contentnode[@content]")
-    actual = xml.findall(".//child/contentnode")
-
+    Parses a route of format 'node#childnode#subchildnode[attribute]'
+    into a CSS Selector (e.g. 'node childnode subchildnode[attribute]')
     '''
     tags = route.split('#')
 
-    if skip_first:
-        tags.pop(0)
-
-    xpath_query = "./"
+    query = None
     attribute = None
 
     for i in range(len(tags)):
@@ -162,12 +174,15 @@ def parse_route(route, skip_first):
             tag = tag_attribute[0]
             attribute = tag_attribute[1][:-1]
 
-        xpath_query = "{}/{}".format(xpath_query, tag)
+        if query is None:
+            query = tag
+        else:
+            query = "{} {}".format(query, tag)
 
         if not attribute is None:
-            xpath_query = "{}[@{}]".format(xpath_query, attribute)
+            query = "{}[{}]".format(query, attribute)
 
-    return {'query': xpath_query, 'attr': attribute}
+    return {'query': query, 'attr': attribute}
 
 
 def write_to_file(folder, filename, text):
