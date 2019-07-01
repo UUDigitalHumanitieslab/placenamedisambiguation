@@ -1,5 +1,7 @@
-import os, json
+import os
+import json
 from bio_converter import convert_to_bio
+
 
 def test_convert_to_bio_one_entity():
     text = "Simple line with one Entity"
@@ -19,6 +21,7 @@ def test_convert_to_bio_one_entity():
     expected = ['Simple O', 'line O', 'with O', 'one O', 'Entity LOC']
     assert bio == expected
 
+
 def test_convert_to_bio_one_entity_two_words():
     text = "Simple line with one TWO WORDS"
 
@@ -34,7 +37,8 @@ def test_convert_to_bio_one_entity_two_words():
     }]
 
     bio = convert_to_bio(text, entities)
-    expected = ['Simple O', 'line O', 'with O', 'one O', 'TWO LOC', 'WORDS LOC']
+    expected = ['Simple O', 'line O', 'with O',
+                'one O', 'TWO LOC', 'WORDS LOC']
     assert bio == expected
 
 
@@ -51,7 +55,7 @@ def test_convert_to_bio_two_entities():
         "right_context": "in the",
         "alt_nes": []
     },
-    {
+        {
         "ner_src": ["spotlight", "stanford", "polyglot", "spacy"],
         "type_certainty": 4,
         "left_context": "middle and",
@@ -64,10 +68,11 @@ def test_convert_to_bio_two_entities():
 
     bio = convert_to_bio(text, entities)
     expected = [
-        'Simple O', 'line O', 'with O', 'one O', 'Entity LOC', 'in O', 'the O', 'middle O', 
+        'Simple O', 'line O', 'with O', 'one O', 'Entity LOC', 'in O', 'the O', 'middle O',
         'and O', 'ANOTHER PER', 'ONE PER', 'much O', 'further O', 'on. O']
 
     assert bio == expected
+
 
 def test_convert_to_bio_one_entity_three_words():
     text = "Simple ENTITY THREE WORDS and more words"
@@ -84,13 +89,65 @@ def test_convert_to_bio_one_entity_three_words():
     }]
 
     bio = convert_to_bio(text, entities)
-    expected = ['Simple O', 'ENTITY ORG', 'THREE ORG', 'WORDS ORG', 'and O', 'more O', 'words O']
+    expected = ['Simple O', 'ENTITY ORG', 'THREE ORG',
+                'WORDS ORG', 'and O', 'more O', 'words O']
 
     assert bio == expected
 
+
+def test_location_example():
+    text = "« di motivazione » a Rohrbach , in Alta Austria"
+
+    entities = [
+        {
+            "left_context": "motivazione » a",
+            "count": 3,
+            "ne": "Rohrbach",
+            "pos": 21,
+            "types": [
+                "LOCATION"
+            ],
+            "ner_src": [
+                "spacy",
+                "stanford",
+                "polyglot"
+            ],
+            "right_context": ", in Alta",
+            "type": "LOCATION",
+            "alt_nes": [],
+            "type_certainty": 3
+        },
+        {
+            "left_context": "Rohrbach , in",
+            "count": 4,
+            "ne": "Alta Austria",
+            "pos": 35,
+            "types": [
+                "LOCATION"
+            ],
+            "ner_src": [
+                "spacy",
+                "spotlight",
+                "stanford",
+                "polyglot"
+            ],
+            "right_context": "",
+            "type": "LOCATION",
+            "alt_nes": [
+                    "Alta"
+            ],
+            "type_certainty": 4
+        }
+    ]
+
+    expected = ['« O', 'di O', 'motivazione O', '» O', 'a O', 'Rohrbach LOC', ', O', 'in O', 'Alta LOC', 'Austria LOC']
+    actual = convert_to_bio(text, entities)
+    assert actual == expected
+
 def test_convert_to_bio_real_example(tmpdir):
-    test_files_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'test_files')
-    
+    test_files_folder = os.path.join(os.path.dirname(
+        os.path.realpath(__file__)), 'test_files')
+
     with open(os.path.join(test_files_folder, 'urn=ddd_000010470_mpeg21_p002_alto.alto.xml.txt'), 'r') as fh:
         text = fh.read()
 
@@ -99,7 +156,7 @@ def test_convert_to_bio_real_example(tmpdir):
         entities = entities_full['entities']
 
     bio = convert_to_bio(text, entities)
-   
+
     temp_file = tmpdir.join('tempout.bio')
     with open(temp_file, 'w') as fh:
         for line in bio:
@@ -107,8 +164,8 @@ def test_convert_to_bio_real_example(tmpdir):
 
     with open(temp_file, 'r') as fh:
         actual = fh.readlines()
-    
+
     with open(os.path.join(test_files_folder, 'urn=ddd_000010470_mpeg21_p002_alto.alto.xml.bio'), 'r') as fh:
         expected = fh.readlines()
-    
+
     assert actual == expected
