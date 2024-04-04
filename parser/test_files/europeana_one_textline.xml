@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<alto xmlns="http://schema.ccs-gmbh.com/ALTO" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+ <description> 
+  <measurementunit>
+   pixel
+  </measurementunit> 
+  <sourceimageinformation> 
+   <filename>
+    DDD_000010470_002.jp2
+   </filename> 
+  </sourceimageinformation> 
+  <ocrprocessing id="OCRPROCESSING_1"> 
+   <preprocessingstep> 
+    <processingdatetime>
+     2009-01-22
+    </processingdatetime> 
+    <processingagency>
+     CCS Content Conversion Specialists GmbH, www.content-conversion.com
+    </processingagency> 
+    <processingstepdescription>
+     align
+    </processingstepdescription> 
+    <processingstepsettings>
+     CCS OCR Processing Filter
+    </processingstepsettings> 
+    <processingsoftware> 
+     <softwarecreator>
+      CCS Content Conversion Specialists GmbH, Germany
+     </softwarecreator> 
+     <softwarename>
+      CCS docWORKS
+     </softwarename> 
+     <softwareversion>
+      6.3-0.47
+     </softwareversion> 
+     <applicationdescription /> 
+    </processingsoftware> 
+   </preprocessingstep> 
+   <ocrprocessingstep> 
+    <processingsoftware> 
+     <softwarecreator>
+      ABBYY (BIT Software), Russia
+     </softwarecreator> 
+     <softwarename>
+      Finereader
+     </softwarename> 
+     <softwareversion>
+      8.1
+     </softwareversion> 
+    </processingsoftware> 
+   </ocrprocessingstep> 
+  </ocrprocessing> 
+ </description> 
+ <styles> 
+  <textstyle id="TXT_0" fontsize="9" fontfamily="Times New Roman" /> 
+  <textstyle id="TXT_1" fontsize="9" fontfamily="Times New Roman" fontstyle="italics" /> 
+  <textstyle id="TXT_2" fontsize="14" fontfamily="Arial" fontstyle="bold" /> 
+  <textstyle id="TXT_3" fontsize="9" fontfamily="Times New Roman" fontstyle="bold" /> 
+  <paragraphstyle id="PAR_BLOCK" align="Block" /> 
+  <paragraphstyle id="PAR_LEFT" align="Left" /> 
+ </styles> 
+ <layout> 
+  <page id="P2" physical_img_nr="2" height="4773" width="2960" position="Left" pc="0.984"> 
+   <topmargin id="P2_TM00001" hpos="0" vpos="0" width="2960" height="52" /> 
+   <leftmargin id="P2_LM00001" hpos="0" vpos="52" width="48" height="4662" /> 
+   <rightmargin id="P2_RM00001" hpos="2908" vpos="52" width="52" height="4662" /> 
+   <bottommargin id="P2_BM00001" hpos="0" vpos="4714" width="2960" height="59" /> 
+   <printspace id="P2_PS00001" hpos="48" vpos="52" width="2861" height="4662"> 
+    <textblock id="P2_TB00001" hpos="58" vpos="57" width="935" height="1194" stylerefs="TXT_0 PAR_BLOCK"> 
+     <textline id="P2_TL00001" hpos="59" vpos="59" width="932" height="39"> 
+      <string id="P2_ST00001" hpos="59" vpos="59" width="104" height="31" content="Indien" wc="1.00" cc="880368" /> 
+      <sp id="P2_SP00001" hpos="163" vpos="90" width="34" /> 
+      <string id="P2_ST00002" hpos="197" vpos="71" width="64" height="19" content="men" wc="1.00" cc="888" /> 
+      <sp id="P2_SP00002" hpos="261" vpos="90" width="28" /> 
+      <string id="P2_ST00003" hpos="289" vpos="59" width="89" height="31" content="Itali&euml;" wc="1.00" cc="769069" /> 
+      <sp id="P2_SP00003" hpos="378" vpos="90" width="33" /> 
+      <string id="P2_ST00004" hpos="411" vpos="60" width="26" height="28" content="in" wc="0.98" cc="57" /> 
+      <sp id="P2_SP00004" hpos="437" vpos="90" width="34" /> 
+      <string id="P2_ST00005" hpos="471" vpos="59" width="57" height="38" content="zijn" wc="1.00" cc="7008" /> 
+      <sp id="P2_SP00005" hpos="528" vpos="97" width="30" /> 
+      <string id="P2_ST00006" hpos="557" vpos="59" width="98" height="39" content="geheel" wc="1.00" cc="978778" /> 
+      <sp id="P2_SP00006" hpos="656" vpos="98" width="22" /> 
+      <string id="P2_ST00007" hpos="678" vpos="59" width="59" height="28" content="kon" wc="1.00" cc="698" /> 
+      <sp id="P2_SP00007" hpos="737" vpos="98" width="20" /> 
+      <string id="P2_ST00008" hpos="757" vpos="59" width="211" height="28" content="neutraliseren" wc="1.00" cc="8886070788888" /> 
+      <sp id="P2_SP00008" hpos="969" vpos="98" width="17" /> 
+      <string id="P2_ST00009" hpos="985" vpos="79" width="6" height="12" content="," wc="0.98" cc="3" /> 
+     </textline>
+    </textblock> 
+   </printspace> 
+  </page> 
+ </layout> 
+</alto>

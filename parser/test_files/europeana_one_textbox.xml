@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<alto xmlns="http://schema.ccs-gmbh.com/ALTO" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+ <description> 
+  <measurementunit>
+   pixel
+  </measurementunit> 
+  <sourceimageinformation> 
+   <filename>
+    DDD_000010470_002.jp2
+   </filename> 
+  </sourceimageinformation> 
+  <ocrprocessing id="OCRPROCESSING_1"> 
+   <preprocessingstep> 
+    <processingdatetime>
+     2009-01-22
+    </processingdatetime> 
+    <processingagency>
+     CCS Content Conversion Specialists GmbH, www.content-conversion.com
+    </processingagency> 
+    <processingstepdescription>
+     align
+    </processingstepdescription> 
+    <processingstepsettings>
+     CCS OCR Processing Filter
+    </processingstepsettings> 
+    <processingsoftware> 
+     <softwarecreator>
+      CCS Content Conversion Specialists GmbH, Germany
+     </softwarecreator> 
+     <softwarename>
+      CCS docWORKS
+     </softwarename> 
+     <softwareversion>
+      6.3-0.47
+     </softwareversion> 
+     <applicationdescription /> 
+    </processingsoftware> 
+   </preprocessingstep> 
+   <ocrprocessingstep> 
+    <processingsoftware> 
+     <softwarecreator>
+      ABBYY (BIT Software), Russia
+     </softwarecreator> 
+     <softwarename>
+      Finereader
+     </softwarename> 
+     <softwareversion>
+      8.1
+     </softwareversion> 
+    </processingsoftware> 
+   </ocrprocessingstep> 
+  </ocrprocessing> 
+ </description> 
+ <styles> 
+  <textstyle id="TXT_0" fontsize="9" fontfamily="Times New Roman" /> 
+  <textstyle id="TXT_1" fontsize="9" fontfamily="Times New Roman" fontstyle="italics" /> 
+  <textstyle id="TXT_2" fontsize="14" fontfamily="Arial" fontstyle="bold" /> 
+  <textstyle id="TXT_3" fontsize="9" fontfamily="Times New Roman" fontstyle="bold" /> 
+  <paragraphstyle id="PAR_BLOCK" align="Block" /> 
+  <paragraphstyle id="PAR_LEFT" align="Left" /> 
+ </styles> 
+ <layout> 
+  <page id="P2" physical_img_nr="2" height="4773" width="2960" position="Left" pc="0.984"> 
+   <topmargin id="P2_TM00001" hpos="0" vpos="0" width="2960" height="52" /> 
+   <leftmargin id="P2_LM00001" hpos="0" vpos="52" width="48" height="4662" /> 
+   <rightmargin id="P2_RM00001" hpos="2908" vpos="52" width="52" height="4662" /> 
+   <bottommargin id="P2_BM00001" hpos="0" vpos="4714" width="2960" height="59" /> 
+   <printspace id="P2_PS00001" hpos="48" vpos="52" width="2861" height="4662"> 
+    <textblock id="P2_TB00001" hpos="58" vpos="57" width="935" height="1194" stylerefs="TXT_0 PAR_BLOCK"> 
+     <textline id="P2_TL00001" hpos="59" vpos="59" width="932" height="39"> 
+      <string id="P2_ST00001" hpos="59" vpos="59" width="104" height="31" content="Indien" wc="1.00" cc="880368" /> 
+      <sp id="P2_SP00001" hpos="163" vpos="90" width="34" /> 
+      <string id="P2_ST00002" hpos="197" vpos="71" width="64" height="19" content="men" wc="1.00" cc="888" /> 
+      <sp id="P2_SP00002" hpos="261" vpos="90" width="28" /> 
+      <string id="P2_ST00003" hpos="289" vpos="59" width="89" height="31" content="Itali&euml;" wc="1.00" cc="769069" /> 
+      <sp id="P2_SP00003" hpos="378" vpos="90" width="33" /> 
+      <string id="P2_ST00004" hpos="411" vpos="60" width="26" height="28" content="in" wc="0.98" cc="57" /> 
+      <sp id="P2_SP00004" hpos="437" vpos="90" width="34" /> 
+      <string id="P2_ST00005" hpos="471" vpos="59" width="57" height="38" content="zijn" wc="1.00" cc="7008" /> 
+      <sp id="P2_SP00005" hpos="528" vpos="97" width="30" /> 
+      <string id="P2_ST00006" hpos="557" vpos="59" width="98" height="39" content="geheel" wc="1.00" cc="978778" /> 
+      <sp id="P2_SP00006" hpos="656" vpos="98" width="22" /> 
+      <string id="P2_ST00007" hpos="678" vpos="59" width="59" height="28" content="kon" wc="1.00" cc="698" /> 
+      <sp id="P2_SP00007" hpos="737" vpos="98" width="20" /> 
+      <string id="P2_ST00008" hpos="757" vpos="59" width="211" height="28" content="neutraliseren" wc="1.00" cc="8886070788888" /> 
+      <sp id="P2_SP00008" hpos="969" vpos="98" width="17" /> 
+      <string id="P2_ST00009" hpos="985" vpos="79" width="6" height="12" content="," wc="0.98" cc="3" /> 
+     </textline> 
+     <textline id="P2_TL00002" hpos="65" vpos="98" width="928" height="39"> 
+      <string id="P2_ST00010" hpos="65" vpos="99" width="58" height="30" content="dan" wc="1.00" cc="964" /> 
+      <sp id="P2_SP00009" hpos="123" vpos="129" width="20" /> 
+      <string id="P2_ST00011" hpos="143" vpos="110" width="54" height="19" content="zou" wc="1.00" cc="563" /> 
+      <sp id="P2_SP00010" hpos="197" vpos="129" width="20" /> 
+      <string id="P2_ST00012" hpos="217" vpos="100" width="45" height="28" content="dit" wc="1.00" cc="047" /> 
+      <sp id="P2_SP00011" hpos="262" vpos="129" width="21" /> 
+      <string id="P2_ST00013" hpos="283" vpos="110" width="69" height="20" content="eene" wc="0.96" cc="2876" /> 
+      <sp id="P2_SP00012" hpos="352" vpos="130" width="22" /> 
+      <string id="P2_ST00014" hpos="374" vpos="99" width="183" height="38" content="belangrijke" wc="1.00" cc="00189056946" /> 
+      <sp id="P2_SP00013" hpos="557" vpos="137" width="13" /> 
+      <string id="P2_ST00015" hpos="570" vpos="104" width="67" height="32" content="stap" wc="1.00" cc="7100" /> 
+      <sp id="P2_SP00014" hpos="638" vpos="137" width="21" /> 
+      <string id="P2_ST00016" hpos="659" vpos="98" width="59" height="37" content="zijn" wc="1.00" cc="5307" /> 
+      <sp id="P2_SP00015" hpos="718" vpos="137" width="24" /> 
+      <string id="P2_ST00017" hpos="742" vpos="104" width="44" height="22" content="tot" wc="1.00" cc="035" /> 
+      <sp id="P2_SP00016" hpos="785" vpos="137" width="12" /> 
+      <string id="P2_ST00018" hpos="797" vpos="98" width="196" height="38" content="voorkoming" wc="1.00" cc="9500409009" /> 
+     </textline> 
+     <textline id="P2_TL00003" hpos="66" vpos="138" width="925" height="33"> 
+      <string id="P2_ST00019" hpos="66" vpos="150" width="58" height="19" content="van" wc="1.00" cc="965" /> 
+      <sp id="P2_SP00017" hpos="124" vpos="169" width="19" /> 
+      <string id="P2_ST00020" hpos="143" vpos="141" width="184" height="28" content="aanstaande" wc="1.00" cc="3970009525" /> 
+      <sp id="P2_SP00018" hpos="327" vpos="169" width="19" /> 
+      <string id="P2_ST00021" hpos="346" vpos="138" width="202" height="30" content="Italiaansche" wc="0.96" cc="339157708070" /> 
+      <sp id="P2_SP00019" hpos="548" vpos="169" width="21" /> 
+      <string id="P2_ST00022" hpos="569" vpos="138" width="159" height="33" content="kwestien," wc="0.96" cc="290807374" /> 
+      <sp id="P2_SP00020" hpos="729" vpos="171" width="14" /> 
+      <string id="P2_ST00023" hpos="743" vpos="138" width="92" height="30" content="welke" wc="1.00" cc="94328" /> 
+      <sp id="P2_SP00021" hpos="835" vpos="171" width="12" /> 
+      <string id="P2_ST00024" hpos="847" vpos="138" width="144" height="30" content="kwestien" wc="0.96" cc="19377047" /> 
+     </textline> 
+     <textline id="P2_TL00004" hpos="63" vpos="177" width="930" height="40"> 
+      <string id="P2_ST00025" hpos="63" vpos="180" width="169" height="37" content="gedurende" wc="1.00" cc="980803705" /> 
+      <sp id="P2_SP00022" hpos="231" vpos="216" width="18" /> 
+      <string id="P2_ST00026" hpos="249" vpos="189" width="120" height="19" content="eeuwen" wc="1.00" cc="016935" /> 
+      <sp id="P2_SP00023" hpos="370" vpos="216" width="20" /> 
+      <string id="P2_ST00027" hpos="390" vpos="180" width="37" height="27" content="de" wc="0.98" cc="90" /> 
+      <sp id="P2_SP00024" hpos="426" vpos="216" width="18" /> 
+      <string id="P2_ST00028" hpos="444" vpos="177" width="130" height="31" content="oorzaak" wc="1.00" cc="3105003" /> 
+      <sp id="P2_SP00025" hpos="574" vpos="216" width="20" /> 
+      <string id="P2_ST00029" hpos="594" vpos="188" width="56" height="19" content="van" wc="1.00" cc="967" /> 
+      <sp id="P2_SP00026" hpos="650" vpos="216" width="21" /> 
+      <string id="P2_ST00030" hpos="671" vpos="178" width="138" height="39" content="oorlogen" wc="1.00" cc="53002943" /> 
+      <sp id="P2_SP00027" hpos="809" vpos="217" width="19" /> 
+      <string id="P2_ST00031" hpos="828" vpos="178" width="28" height="30" content="in" wc="0.98" cc="60" /> 
+      <sp id="P2_SP00028" hpos="856" vpos="217" width="13" /> 
+      <string id="P2_ST00032" hpos="869" vpos="180" width="123" height="37" content="Europa" wc="1.00" cc="765479" /> 
+     </textline> 
+     <textline id="P2_TL00005" hpos="65" vpos="219" width="213" height="39"> 
+      <string id="P2_ST00033" hpos="65" vpos="219" width="58" height="35" content="zijn" wc="1.00" cc="7825" /> 
+      <sp id="P2_SP00029" hpos="123" vpos="254" width="19" /> 
+      <string id="P2_ST00034" hpos="142" vpos="224" width="136" height="33" content="geweest." wc="1.00" cc="20800501" /> 
+     </textline> 
+     <textline id="P2_TL00006" hpos="103" vpos="256" width="887" height="43"> 
+      <string id="P2_ST00035" hpos="103" vpos="275" width="39" height="6" content="?" wc="0.20" cc="8" /> 
+      <sp id="P2_SP00030" hpos="142" vpos="281" width="21" /> 
+      <string id="P2_ST00036" hpos="163" vpos="259" width="46" height="37" content="Op" wc="0.98" cc="30" /> 
+      <sp id="P2_SP00031" hpos="209" vpos="295" width="21" /> 
+      <string id="P2_ST00037" hpos="230" vpos="261" width="38" height="25" content="de" wc="0.98" cc="00" /> 
+      <sp id="P2_SP00032" hpos="268" vpos="295" width="21" /> 
+      <string id="P2_ST00038" hpos="289" vpos="268" width="116" height="19" content="werven" wc="1.00" cc="957070" /> 
+      <sp id="P2_SP00033" hpos="405" vpos="295" width="13" /> 
+      <string id="P2_ST00039" hpos="418" vpos="261" width="26" height="25" content="te" wc="0.98" cc="70" /> 
+      <sp id="P2_SP00034" hpos="444" vpos="295" width="13" /> 
+      <string id="P2_ST00040" hpos="457" vpos="256" width="149" height="30" content="Chatham" wc="0.96" cc="4400667" /> 
+      <sp id="P2_SP00035" hpos="606" vpos="295" width="13" /> 
+      <string id="P2_ST00041" hpos="619" vpos="257" width="135" height="30" content="heerscht" wc="0.96" cc="75776174" /> 
+      <sp id="P2_SP00036" hpos="754" vpos="295" width="13" /> 
+      <string id="P2_ST00042" hpos="767" vpos="259" width="223" height="40" content="tegenwoordig" wc="1.00" cc="009029662050" /> 
+     </textline> 
+     <textline id="P2_TL00007" hpos="64" vpos="296" width="926" height="38"> 
+      <string id="P2_ST00043" hpos="64" vpos="301" width="35" height="25" content="de" wc="0.98" cc="77" /> 
+      <sp id="P2_SP00037" hpos="99" vpos="326" width="22" /> 
+      <string id="P2_ST00044" hpos="122" vpos="305" width="107" height="21" content="meeste" wc="1.00" cc="633756" /> 
+      <sp id="P2_SP00038" hpos="229" vpos="326" width="21" /> 
+      <string id="P2_ST00045" hpos="250" vpos="296" width="215" height="38" content="bedrijvigheid" wc="1.00" cc="1004600601650" /> 
+      <sp id="P2_SP00039" hpos="465" vpos="334" width="28" /> 
+      <string id="P2_ST00046" hpos="494" vpos="307" width="34" height="19" content="en" wc="0.98" cc="50" /> 
+      <sp id="P2_SP00040" hpos="528" vpos="334" width="21" /> 
+      <string id="P2_ST00047" hpos="549" vpos="296" width="37" height="30" content="de" wc="0.98" cc="78" /> 
+      <sp id="P2_SP00041" hpos="586" vpos="334" width="20" /> 
+      <string id="P2_ST00048" hpos="606" vpos="298" width="30" height="28" content="in" wc="0.98" cc="50" /> 
+      <sp id="P2_SP00042" hpos="635" vpos="334" width="22" /> 
+      <string id="P2_ST00049" hpos="658" vpos="299" width="247" height="28" content="onderscheidene" wc="1.00" cc="05004903040760" /> 
+      <sp id="P2_SP00043" hpos="905" vpos="334" width="21" /> 
+      <string id="P2_ST00050" hpos="926" vpos="305" width="48" height="22" content="eta" subs_type="HypPart1" subs_content="etablissementen" wc="1.00" cc="0793" /> 
+      <hyp hpos="974" vpos="305" width="15" content="-" /> 
+     </textline> 
+     <textline id="P2_TL00008" hpos="61" vpos="337" width="930" height="40"> 
+      <string id="P2_ST00051" hpos="61" vpos="338" width="210" height="27" content="blissementen" subs_type="HypPart2" subs_content="etablissementen" wc="1.00" cc="717860660457" /> 
+      <sp id="P2_SP00044" hpos="272" vpos="365" width="21" /> 
+      <string id="P2_ST00052" hpos="293" vpos="337" width="189" height="38" content="aangestelde" wc="1.00" cc="70194602300" /> 
+      <sp id="P2_SP00045" hpos="482" vpos="374" width="18" /> 
+      <string id="P2_ST00053" hpos="500" vpos="337" width="196" height="33" content="werklieden," wc="1.00" cc="90704740163" /> 
+      <sp id="P2_SP00046" hpos="696" vpos="374" width="18" /> 
+      <string id="P2_ST00054" hpos="713" vpos="344" width="113" height="22" content="moeten" wc="1.00" cc="560003" /> 
+      <sp id="P2_SP00047" hpos="827" vpos="374" width="21" /> 
+      <string id="P2_ST00055" hpos="848" vpos="339" width="143" height="38" content="dagelijks" wc="1.00" cc="000073007" /> 
+     </textline> 
+     <textline id="P2_TL00009" hpos="65" vpos="376" width="926" height="40"> 
+      <string id="P2_ST00056" hpos="65" vpos="377" width="209" height="28" content="verscheidene" wc="1.00" cc="966773165760" /> 
+      <sp id="P2_SP00048" hpos="274" vpos="405" width="21" /> 
+      <string id="P2_ST00057" hpos="295" vpos="385" width="71" height="19" content="uren" wc="1.00" cc="3002" /> 
+      <sp id="P2_SP00049" hpos="366" vpos="405" width="20" /> 
+      <string id="P2_ST00058" hpos="386" vpos="385" width="72" height="19" content="over" wc="1.00" cc="6003" /> 
+      <sp id="P2_SP00050" hpos="458" vpos="405" width="20" /> 
+      <string id="P2_ST00059" hpos="478" vpos="376" width="128" height="35" content="werken," wc="1.00" cc="8236000" /> 
+      <sp id="P2_SP00051" hpos="606" vpos="411" width="11" /> 
+      <string id="P2_ST00060" hpos="617" vpos="383" width="47" height="22" content="ten" wc="1.00" cc="034" /> 
+      <sp id="P2_SP00052" hpos="664" vpos="411" width="14" /> 
+      <string id="P2_ST00061" hpos="678" vpos="378" width="84" height="27" content="einde" wc="1.00" cc="37000" /> 
+      <sp id="P2_SP00053" hpos="762" vpos="411" width="8" /> 
+      <string id="P2_ST00062" hpos="770" vpos="378" width="37" height="28" content="de" wc="0.98" cc="02" /> 
+      <sp id="P2_SP00054" hpos="807" vpos="411" width="12" /> 
+      <string id="P2_ST00063" hpos="819" vpos="378" width="172" height="38" content="voltooijing" wc="0.96" cc="95009450200" /> 
+     </textline> 
+     <textline id="P2_TL00010" hpos="65" vpos="416" width="925" height="40"> 
+      <string id="P2_ST00064" hpos="65" vpos="417" width="53" height="27" content="der" wc="1.00" cc="714" /> 
+      <sp id="P2_SP00055" hpos="118" vpos="444" width="18" /> 
+      <string id="P2_ST00065" hpos="136" vpos="417" width="30" height="27" content="&iuml;n" wc="0.96" cc="66" /> 
+      <sp id="P2_SP00056" hpos="165" vpos="444" width="20" /> 
+      <string id="P2_ST00066" hpos="185" vpos="417" width="150" height="27" content="aanbouw" wc="1.00" cc="9765709" /> 
+      <sp id="P2_SP00057" hpos="335" vpos="444" width="20" /> 
+      <string id="P2_ST00067" hpos="356" vpos="416" width="97" height="37" content="zijnde" wc="1.00" cc="637500" /> 
+      <sp id="P2_SP00058" hpos="452" vpos="452" width="21" /> 
+      <string id="P2_ST00068" hpos="474" vpos="417" width="124" height="38" content="schepen" wc="1.00" cc="5640060" /> 
+      <sp id="P2_SP00059" hpos="598" vpos="455" width="31" /> 
+      <string id="P2_ST00069" hpos="628" vpos="423" width="28" height="25" content="te" wc="0.98" cc="36" /> 
+      <sp id="P2_SP00060" hpos="657" vpos="455" width="24" /> 
+      <string id="P2_ST00070" hpos="680" vpos="418" width="194" height="38" content="bespoedigen" wc="1.00" cc="60006094200" /> 
+      <sp id="P2_SP00061" hpos="874" vpos="456" width="21" /> 
+      <string id="P2_ST00071" hpos="895" vpos="428" width="35" height="19" content="en" wc="0.98" cc="45" /> 
+      <sp id="P2_SP00062" hpos="931" vpos="456" width="13" /> 
+      <string id="P2_ST00072" hpos="944" vpos="418" width="46" height="27" content="het" wc="1.00" cc="505" /> 
+     </textline> 
+     <textline id="P2_TL00011" hpos="64" vpos="457" width="927" height="39"> 
+      <string id="P2_ST00073" hpos="64" vpos="464" width="39" height="28" content="op" wc="0.98" cc="60" /> 
+      <sp id="P2_SP00063" hpos="103" vpos="493" width="18" /> 
+      <string id="P2_ST00074" hpos="120" vpos="457" width="107" height="26" content="andere" wc="1.00" cc="769756" /> 
+      <sp id="P2_SP00064" hpos="228" vpos="493" width="20" /> 
+      <string id="P2_ST00075" hpos="248" vpos="465" width="118" height="19" content="werven" wc="1.00" cc="942076" /> 
+      <sp id="P2_SP00065" hpos="366" vpos="493" width="21" /> 
+      <string id="P2_ST00076" hpos="387" vpos="457" width="167" height="39" content="benoodigd" wc="0.96" cc="240779490" /> 
+      <sp id="P2_SP00066" hpos="554" vpos="496" width="22" /> 
+      <string id="P2_ST00077" hpos="576" vpos="457" width="150" height="31" content="materieel" wc="1.00" cc="945554404" /> 
+      <sp id="P2_SP00067" hpos="726" vpos="496" width="24" /> 
+      <string id="P2_ST00078" hpos="750" vpos="463" width="27" height="24" content="te" wc="0.98" cc="00" /> 
+      <sp id="P2_SP00068" hpos="777" vpos="496" width="25" /> 
+      <string id="P2_ST00079" hpos="802" vpos="458" width="124" height="27" content="leveren." wc="1.00" cc="04906400" /> 
+      <sp id="P2_SP00069" hpos="926" vpos="496" width="22" /> 
+      <string id="P2_ST00080" hpos="948" vpos="458" width="43" height="27" content="Er" wc="0.98" cc="62" /> 
+     </textline> 
+     <textline id="P2_TL00012" hpos="63" vpos="495" width="926" height="40"> 
+      <string id="P2_ST00081" hpos="63" vpos="496" width="59" height="37" content="zijn" wc="1.00" cc="7460" /> 
+      <sp id="P2_SP00070" hpos="122" vpos="533" width="25" /> 
+      <string id="P2_ST00082" hpos="146" vpos="504" width="73" height="19" content="voor" wc="1.00" cc="9639" /> 
+      <sp id="P2_SP00071" hpos="220" vpos="533" width="20" /> 
+      <string id="P2_ST00083" hpos="240" vpos="495" width="50" height="28" content="het" wc="1.00" cc="490" /> 
+      <sp id="P2_SP00072" hpos="289" vpos="533" width="22" /> 
+      <string id="P2_ST00084" hpos="312" vpos="496" width="158" height="39" content="oogenblik" wc="0.96" cc="358003057" /> 
+      <sp id="P2_SP00073" hpos="470" vpos="535" width="18" /> 
+      <string id="P2_ST00085" hpos="488" vpos="502" width="27" height="25" content="te" wc="0.98" cc="62" /> 
+      <sp id="P2_SP00074" hpos="515" vpos="535" width="22" /> 
+      <string id="P2_ST00086" hpos="537" vpos="496" width="150" height="31" content="Chatham" wc="0.96" cc="0634209" /> 
+      <sp id="P2_SP00075" hpos="687" vpos="535" width="21" /> 
+      <string id="P2_ST00087" hpos="709" vpos="498" width="64" height="28" content="drie" wc="1.00" cc="0073" /> 
+      <sp id="P2_SP00076" hpos="772" vpos="535" width="12" /> 
+      <string id="P2_ST00088" hpos="784" vpos="497" width="204" height="38" content="linieschepon." wc="0.96" cc="3007170614004" /> 
+     </textline> 
+     <textline id="P2_TL00013" hpos="65" vpos="535" width="926" height="38"> 
+      <string id="P2_ST00089" hpos="65" vpos="541" width="77" height="22" content="twee" wc="1.00" cc="6907" /> 
+      <sp id="P2_SP00077" hpos="142" vpos="563" width="31" /> 
+      <string id="P2_ST00090" hpos="172" vpos="535" width="145" height="38" content="fregatten" wc="1.00" cc="977660035" /> 
+      <sp id="P2_SP00078" hpos="318" vpos="573" width="33" /> 
+      <string id="P2_ST00091" hpos="351" vpos="547" width="57" height="19" content="van" wc="1.00" cc="967" /> 
+      <sp id="P2_SP00079" hpos="407" vpos="573" width="31" /> 
+      <string id="P2_ST00092" hpos="438" vpos="539" width="34" height="28" content="51" wc="0.98" cc="44" /> 
+      <sp id="P2_SP00080" hpos="472" vpos="573" width="33" /> 
+      <string id="P2_ST00093" hpos="506" vpos="539" width="129" height="30" content="stukken" wc="1.00" cc="5028018" /> 
+      <sp id="P2_SP00081" hpos="634" vpos="573" width="31" /> 
+      <string id="P2_ST00094" hpos="665" vpos="548" width="35" height="19" content="en" wc="0.98" cc="00" /> 
+      <sp id="P2_SP00082" hpos="700" vpos="573" width="43" /> 
+      <string id="P2_ST00095" hpos="743" vpos="539" width="248" height="30" content="onderscheidene" wc="1.00" cc="55066706060240" /> 
+     </textline> 
+     <textline id="P2_TL00014" hpos="63" vpos="574" width="927" height="42"> 
+      <string id="P2_ST00096" hpos="63" vpos="574" width="130" height="31" content="kleinere" wc="1.00" cc="70107156" /> 
+      <sp id="P2_SP00083" hpos="193" vpos="605" width="22" /> 
+      <string id="P2_ST00097" hpos="215" vpos="576" width="229" height="39" content="oorlogschepen" wc="0.96" cc="6703597000947" /> 
+      <sp id="P2_SP00084" hpos="444" vpos="615" width="24" /> 
+      <string id="P2_ST00098" hpos="468" vpos="579" width="28" height="27" content="in" wc="0.98" cc="86" /> 
+      <sp id="P2_SP00085" hpos="496" vpos="615" width="19" /> 
+      <string id="P2_ST00099" hpos="515" vpos="580" width="150" height="27" content="aanbouw" wc="1.00" cc="0662509" /> 
+      <sp id="P2_SP00086" hpos="665" vpos="615" width="13" /> 
+      <string id="P2_ST00100" hpos="678" vpos="589" width="5" height="18" content=":" wc="0.98" cc="0" /> 
+      <sp id="P2_SP00087" hpos="683" vpos="615" width="24" /> 
+      <string id="P2_ST00101" hpos="706" vpos="580" width="109" height="27" content="zoodra" wc="1.00" cc="765015" /> 
+      <sp id="P2_SP00088" hpos="815" vpos="615" width="13" /> 
+      <string id="P2_ST00102" hpos="828" vpos="580" width="35" height="27" content="de" wc="0.98" cc="80" /> 
+      <sp id="P2_SP00089" hpos="863" vpos="615" width="13" /> 
+      <string id="P2_ST00103" hpos="876" vpos="579" width="98" height="37" content="plaats" subs_type="HypPart1" subs_content="plaatsruimte" wc="1.00" cc="0009082" /> 
+      <hyp hpos="974" vpos="579" width="15" content="-" /> 
+     </textline> 
+     <textline id="P2_TL00015" hpos="64" vpos="615" width="925" height="41"> 
+      <string id="P2_ST00104" hpos="64" vpos="615" width="110" height="30" content="ruimte" subs_type="HypPart2" subs_content="plaatsruimte" wc="1.00" cc="776552" /> 
+      <sp id="P2_SP00090" hpos="174" vpos="645" width="20" /> 
+      <string id="P2_ST00105" hpos="194" vpos="617" width="44" height="30" content="dit" wc="1.00" cc="076" /> 
+      <sp id="P2_SP00091" hpos="237" vpos="646" width="25" /> 
+      <string id="P2_ST00106" hpos="262" vpos="618" width="118" height="32" content="toelaat," wc="1.00" cc="33450062" /> 
+      <sp id="P2_SP00092" hpos="380" vpos="650" width="18" /> 
+      <string id="P2_ST00107" hpos="398" vpos="618" width="93" height="28" content="zullen" wc="1.00" cc="513164" /> 
+      <sp id="P2_SP00093" hpos="491" vpos="650" width="18" /> 
+      <string id="P2_ST00108" hpos="509" vpos="624" width="76" height="22" content="twee" wc="1.00" cc="0744" /> 
+      <sp id="P2_SP00094" hpos="585" vpos="650" width="12" /> 
+      <string id="P2_ST00109" hpos="596" vpos="619" width="115" height="27" content="nieuwe" wc="1.00" cc="404590" /> 
+      <sp id="P2_SP00095" hpos="711" vpos="650" width="13" /> 
+      <string id="P2_ST00110" hpos="724" vpos="619" width="196" height="37" content="linieschepen" wc="0.96" cc="657137466060" /> 
+      <sp id="P2_SP00096" hpos="920" vpos="656" width="14" /> 
+      <string id="P2_ST00111" hpos="934" vpos="628" width="54" height="18" content="van" wc="1.00" cc="975" /> 
+     </textline> 
+     <textline id="P2_TL00016" hpos="63" vpos="656" width="924" height="40"> 
+      <string id="P2_ST00112" hpos="63" vpos="656" width="37" height="30" content="de" wc="0.98" cc="93" /> 
+      <sp id="P2_SP00097" hpos="99" vpos="685" width="21" /> 
+      <string id="P2_ST00113" hpos="120" vpos="661" width="94" height="24" content="eerste" wc="1.00" cc="600800" /> 
+      <sp id="P2_SP00098" hpos="215" vpos="685" width="19" /> 
+      <string id="P2_ST00114" hpos="234" vpos="661" width="118" height="33" content="grootte" wc="1.00" cc="2636500" /> 
+      <sp id="P2_SP00099" hpos="352" vpos="694" width="21" /> 
+      <string id="P2_ST00115" hpos="373" vpos="667" width="38" height="27" content="op" wc="0.98" cc="79" /> 
+      <sp id="P2_SP00100" hpos="411" vpos="694" width="21" /> 
+      <string id="P2_ST00116" hpos="432" vpos="658" width="96" height="37" content="stapel" wc="1.00" cc="740090" /> 
+      <sp id="P2_SP00101" hpos="528" vpos="694" width="22" /> 
+      <string id="P2_ST00117" hpos="550" vpos="659" width="120" height="27" content="worden" wc="1.00" cc="062060" /> 
+      <sp id="P2_SP00102" hpos="671" vpos="694" width="21" /> 
+      <string id="P2_ST00118" hpos="692" vpos="663" width="92" height="33" content="gezet." wc="1.00" cc="337670" /> 
+      <sp id="P2_SP00103" hpos="784" vpos="696" width="34" /> 
+      <string id="P2_ST00119" hpos="819" vpos="659" width="63" height="26" content="Ten" wc="1.00" cc="073" /> 
+      <sp id="P2_SP00104" hpos="881" vpos="696" width="21" /> 
+      <string id="P2_ST00120" hpos="902" vpos="659" width="84" height="27" content="einde" wc="1.00" cc="17405" /> 
+     </textline> 
+     <textline id="P2_TL00017" hpos="65" vpos="696" width="924" height="40"> 
+      <string id="P2_ST00121" hpos="65" vpos="696" width="35" height="28" content="de" wc="0.98" cc="83" /> 
+      <sp id="P2_SP00105" hpos="100" vpos="724" width="22" /> 
+      <string id="P2_ST00122" hpos="123" vpos="697" width="206" height="28" content="werkzaamhe" wc="0.96" cc="8135749577" /> 
+      <sp id="P2_SP00106" hpos="328" vpos="725" width="11" /> 
+      <string id="P2_ST00123" hpos="339" vpos="698" width="48" height="26" content="len" wc="0.96" cc="863" /> 
+      <sp id="P2_SP00107" hpos="387" vpos="725" width="31" /> 
+      <string id="P2_ST00124" hpos="418" vpos="702" width="30" height="24" content="te" wc="0.98" cc="06" /> 
+      <sp id="P2_SP00108" hpos="448" vpos="725" width="31" /> 
+      <string id="P2_ST00125" hpos="478" vpos="698" width="213" height="38" content="bespoedigen," wc="1.00" cc="009096809060" /> 
+      <sp id="P2_SP00109" hpos="691" vpos="736" width="24" /> 
+      <string id="P2_ST00126" hpos="715" vpos="698" width="57" height="37" content="zijn" wc="1.00" cc="7700" /> 
+      <sp id="P2_SP00110" hpos="771" vpos="736" width="22" /> 
+      <string id="P2_ST00127" hpos="794" vpos="698" width="124" height="34" content="onlangs" wc="1.00" cc="6609094" /> 
+      <sp id="P2_SP00111" hpos="918" vpos="736" width="21" /> 
+      <string id="P2_ST00128" hpos="939" vpos="709" width="33" height="27" content="ge" subs_type="HypPart1" subs_content="gevangenen" wc="1.00" cc="753" /> 
+      <hyp hpos="972" vpos="709" width="17" content="-" /> 
+     </textline> 
+     <textline id="P2_TL00018" hpos="65" vpos="737" width="848" height="39"> 
+      <string id="P2_ST00129" hpos="65" vpos="745" width="150" height="30" content="vangenen" subs_type="HypPart2" subs_content="gevangenen" wc="1.00" cc="98640451" /> 
+      <sp id="P2_SP00112" hpos="215" vpos="775" width="20" /> 
+      <string id="P2_ST00130" hpos="235" vpos="737" width="45" height="26" content="uit" wc="1.00" cc="360" /> 
+      <sp id="P2_SP00113" hpos="280" vpos="775" width="18" /> 
+      <string ALTERNATIVE='B-LOC' id="P2_ST00131" hpos="298" vpos="737" width="124" height="27" content="Londen" wc="1.00" cc="772906" /> 
+      <sp id="P2_SP00114" hpos="422" vpos="775" width="22" /> 
+      <string id="P2_ST00132" hpos="444" vpos="746" width="74" height="19" content="naar" wc="1.00" cc="7660" /> 
+      <sp id="P2_SP00115" hpos="519" vpos="775" width="22" /> 
+      <string id="P2_ST00133" hpos="541" vpos="737" width="149" height="28" content="Chatham" wc="0.96" cc="7700788" /> 
+      <sp id="P2_SP00116" hpos="690" vpos="775" width="20" /> 
+      <string id="P2_ST00134" hpos="710" vpos="739" width="203" height="37" content="overgobragt." wc="0.96" cc="404038430953" /> 
+     </textline> 
+     <textline id="P2_TL00019" hpos="104" vpos="775" width="883" height="40"> 
+      <string id="P2_ST00135" hpos="104" vpos="793" width="37" height="5" content="?" wc="0.20" cc="8" /> 
+      <sp id="P2_SP00117" hpos="141" vpos="797" width="24" /> 
+      <string id="P2_ST00136" hpos="164" vpos="776" width="45" height="27" content="De" wc="0.98" cc="30" /> 
+      <sp id="P2_SP00118" hpos="209" vpos="803" width="18" /> 
+      <string id="P2_ST00137" hpos="227" vpos="775" width="90" height="28" content="Great" wc="0.96" cc="00086" stylerefs="TXT_1" /> 
+      <sp id="P2_SP00119" hpos="317" vpos="803" width="22" /> 
+      <string id="P2_ST00138" hpos="339" vpos="776" width="125" height="28" content="Eastern" wc="0.96" cc="5463790" stylerefs="TXT_1" /> 
+      <sp id="P2_SP00120" hpos="464" vpos="804" width="12" /> 
+      <string id="P2_ST00139" hpos="476" vpos="776" width="54" height="39" content="ligt" wc="1.00" cc="5480" /> 
+      <sp id="P2_SP00121" hpos="530" vpos="815" width="25" /> 
+      <string id="P2_ST00140" hpos="555" vpos="787" width="71" height="19" content="voor" wc="1.00" cc="0544" /> 
+      <sp id="P2_SP00122" hpos="626" vpos="815" width="24" /> 
+      <string id="P2_ST00141" hpos="650" vpos="777" width="233" height="38" content="Southampton." wc="0.96" cc="958037003723" /> 
+      <sp id="P2_SP00123" hpos="882" vpos="815" width="25" /> 
+      <string id="P2_ST00142" hpos="907" vpos="783" width="80" height="32" content="togen" wc="1.00" cc="48948" /> 
+     </textline> 
+     <textline id="P2_TL00020" hpos="63" vpos="815" width="926" height="39"> 
+      <string id="P2_ST00143" hpos="63" vpos="822" width="93" height="22" content="storm" wc="1.00" cc="75778" /> 
+      <sp id="P2_SP00124" hpos="156" vpos="844" width="22" /> 
+      <string id="P2_ST00144" hpos="178" vpos="826" width="35" height="18" content="en" wc="0.98" cc="67" /> 
+      <sp id="P2_SP00125" hpos="214" vpos="844" width="22" /> 
+      <string id="P2_ST00145" hpos="236" vpos="815" width="98" height="28" content="weder" wc="1.00" cc="96049" /> 
+      <sp id="P2_SP00126" hpos="334" vpos="844" width="12" /> 
+      <string id="P2_ST00146" hpos="346" vpos="816" width="146" height="38" content="beveiligd" wc="1.00" cc="400240080" /> 
+      <sp id="P2_SP00127" hpos="493" vpos="854" width="11" /> 
+      <string id="P2_ST00147" hpos="503" vpos="839" width="7" height="9" content="," wc="0.98" cc="5" /> 
+      <sp id="P2_SP00128" hpos="510" vpos="854" width="25" /> 
+      <string id="P2_ST00148" hpos="535" vpos="827" width="73" height="19" content="voor" wc="1.00" cc="9573" /> 
+      <sp id="P2_SP00129" hpos="608" vpos="854" width="11" /> 
+      <string id="P2_ST00149" hpos="619" vpos="816" width="92" height="30" content="anker" wc="1.00" cc="09367" /> 
+      <sp id="P2_SP00130" hpos="711" vpos="854" width="11" /> 
+      <string id="P2_ST00150" hpos="722" vpos="827" width="34" height="19" content="en" wc="0.98" cc="43" /> 
+      <sp id="P2_SP00131" hpos="756" vpos="854" width="12" /> 
+      <string id="P2_ST00151" hpos="768" vpos="816" width="44" height="30" content="zal" wc="1.00" cc="658" /> 
+      <sp id="P2_SP00132" hpos="811" vpos="854" width="12" /> 
+      <string id="P2_ST00152" hpos="823" vpos="817" width="165" height="37" content="gedurende" wc="1.00" cc="939310297" /> 
+     </textline> 
+     <textline id="P2_TL00021" hpos="61" vpos="855" width="927" height="40"> 
+      <string id="P2_ST00153" hpos="61" vpos="855" width="57" height="28" content="den" wc="1.00" cc="977" /> 
+      <sp id="P2_SP00133" hpos="118" vpos="883" width="20" /> 
+      <string id="P2_ST00154" hpos="138" vpos="855" width="107" height="30" content="winter" wc="1.00" cc="977616" /> 
+      <sp id="P2_SP00134" hpos="246" vpos="885" width="26" /> 
+      <string id="P2_ST00155" hpos="272" vpos="865" width="71" height="30" content="geen" wc="1.00" cc="7604" /> 
+      <sp id="P2_SP00135" hpos="343" vpos="894" width="33" /> 
+      <string id="P2_ST00156" hpos="376" vpos="856" width="107" height="27" content="andere" wc="1.00" cc="609001" /> 
+      <sp id="P2_SP00136" hpos="483" vpos="894" width="33" /> 
+      <string id="P2_ST00157" hpos="516" vpos="856" width="97" height="28" content="haven" wc="1.00" cc="68700" /> 
+      <sp id="P2_SP00137" hpos="613" vpos="894" width="30" /> 
+      <string id="P2_ST00158" hpos="643" vpos="867" width="78" height="19" content="meer" wc="1.00" cc="0767" /> 
+      <sp id="P2_SP00138" hpos="720" vpos="894" width="30" /> 
+      <string id="P2_ST00159" hpos="750" vpos="856" width="155" height="30" content="bezoeken." wc="1.00" cc="649779624" /> 
+      <sp id="P2_SP00139" hpos="905" vpos="894" width="43" /> 
+      <string id="P2_ST00160" hpos="947" vpos="857" width="41" height="27" content="Er" wc="0.98" cc="70" /> 
+     </textline> 
+     <textline id="P2_TL00022" hpos="65" vpos="894" width="924" height="41"> 
+      <string id="P2_ST00161" hpos="65" vpos="895" width="117" height="28" content="&laquo;vorden" wc="0.96" cc="3771060" /> 
+      <sp id="P2_SP00140" hpos="182" vpos="924" width="15" /> 
+      <string id="P2_ST00162" hpos="197" vpos="905" width="53" height="18" content="zoo" wc="1.00" cc="667" /> 
+      <sp id="P2_SP00141" hpos="250" vpos="924" width="22" /> 
+      <string id="P2_ST00163" hpos="273" vpos="894" width="61" height="30" content="veel" wc="1.00" cc="6027" /> 
+      <sp id="P2_SP00142" hpos="334" vpos="924" width="20" /> 
+      <string id="P2_ST00164" hpos="354" vpos="900" width="149" height="24" content="matrozen" wc="1.00" cc="70067700" /> 
+      <sp id="P2_SP00143" hpos="503" vpos="924" width="21" /> 
+      <string id="P2_ST00165" hpos="524" vpos="906" width="57" height="19" content="aan" wc="1.00" cc="781" /> 
+      <sp id="P2_SP00144" hpos="581" vpos="925" width="33" /> 
+      <string id="P2_ST00166" hpos="614" vpos="898" width="92" height="28" content="boord" wc="1.00" cc="37400" /> 
+      <sp id="P2_SP00145" hpos="706" vpos="926" width="31" /> 
+      <string id="P2_ST00167" hpos="737" vpos="898" width="171" height="37" content="gehouden," wc="1.00" cc="177040020" /> 
+      <sp id="P2_SP00146" hpos="908" vpos="934" width="38" /> 
+      <string id="P2_ST00168" hpos="946" vpos="896" width="43" height="28" content="als" wc="1.00" cc="519" /> 
+     </textline> 
+     <textline id="P2_TL00023" hpos="60" vpos="934" width="927" height="38"> 
+      <string id="P2_ST00169" hpos="60" vpos="945" width="74" height="19" content="voor" wc="1.00" cc="9571" /> 
+      <sp id="P2_SP00147" hpos="135" vpos="964" width="24" /> 
+      <string id="P2_ST00170" hpos="158" vpos="934" width="51" height="28" content="het" wc="1.00" cc="720" /> 
+      <sp id="P2_SP00148" hpos="209" vpos="964" width="17" /> 
+      <string id="P2_ST00171" hpos="226" vpos="934" width="228" height="30" content="schoonhouden" wc="1.00" cc="677074604000" /> 
+      <sp id="P2_SP00149" hpos="454" vpos="964" width="31" /> 
+      <string id="P2_ST00172" hpos="484" vpos="937" width="208" height="35" content="noodzakelijk" wc="1.00" cc="707945473402" /> 
+      <sp id="P2_SP00150" hpos="692" vpos="972" width="32" /> 
+      <string id="P2_ST00173" hpos="724" vpos="937" width="66" height="35" content="zijn." wc="1.00" cc="66070" /> 
+      <sp id="P2_SP00151" hpos="790" vpos="972" width="34" /> 
+      <string id="P2_ST00174" hpos="824" vpos="937" width="44" height="28" content="De" wc="0.98" cc="07" /> 
+      <sp id="P2_SP00152" hpos="868" vpos="972" width="32" /> 
+      <string id="P2_ST00175" hpos="900" vpos="935" width="87" height="30" content="zeilen" wc="1.00" cc="540126" /> 
+     </textline> 
+     <textline id="P2_TL00024" hpos="63" vpos="974" width="927" height="40"> 
+      <string id="P2_ST00176" hpos="63" vpos="974" width="57" height="37" content="zijn" wc="1.00" cc="8796" /> 
+      <sp id="P2_SP00153" hpos="119" vpos="1011" width="24" /> 
+      <string id="P2_ST00177" hpos="143" vpos="976" width="144" height="35" content="geborgen" wc="1.00" cc="66560966" /> 
+      <sp id="P2_SP00154" hpos="287" vpos="1011" width="13" /> 
+      <string id="P2_ST00178" hpos="300" vpos="997" width="7" height="9" content="," wc="0.98" cc="0" /> 
+      <sp id="P2_SP00155" hpos="307" vpos="1011" width="24" /> 
+      <string id="P2_ST00179" hpos="331" vpos="976" width="35" height="27" content="de" wc="0.98" cc="93" /> 
+      <sp id="P2_SP00156" hpos="366" vpos="1011" width="25" /> 
+      <string id="P2_ST00180" hpos="391" vpos="974" width="58" height="30" content="kiel" wc="1.00" cc="3240" /> 
+      <sp id="P2_SP00157" hpos="449" vpos="1011" width="24" /> 
+      <string id="P2_ST00181" hpos="472" vpos="976" width="99" height="28" content="wordt" wc="1.00" cc="05350" /> 
+      <sp id="P2_SP00158" hpos="572" vpos="1011" width="11" /> 
+      <string id="P2_ST00182" hpos="582" vpos="977" width="138" height="37" content="geverwd" wc="0.96" cc="6077000" /> 
+      <sp id="P2_SP00159" hpos="720" vpos="1013" width="13" /> 
+      <string id="P2_ST00183" hpos="733" vpos="998" width="6" height="11" content="," wc="0.98" cc="0" /> 
+      <sp id="P2_SP00160" hpos="739" vpos="1013" width="24" /> 
+      <string id="P2_ST00184" hpos="763" vpos="977" width="50" height="27" content="het" wc="1.00" cc="704" /> 
+      <sp id="P2_SP00161" hpos="813" vpos="1013" width="11" /> 
+      <string id="P2_ST00185" hpos="823" vpos="976" width="167" height="37" content="inwendige" wc="1.00" cc="679070570" /> 
+     </textline> 
+     <textline id="P2_TL00025" hpos="60" vpos="1013" width="931" height="37"> 
+      <string id="P2_ST00186" hpos="60" vpos="1024" width="59" height="19" content="van" wc="1.00" cc="946" /> 
+      <sp id="P2_SP00162" hpos="119" vpos="1043" width="30" /> 
+      <string id="P2_ST00187" hpos="149" vpos="1015" width="48" height="28" content="het" wc="1.00" cc="206" /> 
+      <sp id="P2_SP00163" hpos="197" vpos="1043" width="31" /> 
+      <string id="P2_ST00188" hpos="228" vpos="1013" width="85" height="37" content="schip" wc="1.00" cc="75770" /> 
+      <sp id="P2_SP00164" hpos="313" vpos="1050" width="21" /> 
+      <string id="P2_ST00189" hpos="334" vpos="1015" width="98" height="28" content="wordt" wc="1.00" cc="95005" /> 
+      <sp id="P2_SP00165" hpos="432" vpos="1050" width="22" /> 
+      <string id="P2_ST00190" hpos="455" vpos="1015" width="155" height="28" content="verbeterd" wc="1.00" cc="950002000" /> 
+      <sp id="P2_SP00166" hpos="609" vpos="1050" width="22" /> 
+      <string id="P2_ST00191" hpos="632" vpos="1024" width="33" height="19" content="en" wc="0.98" cc="06" /> 
+      <sp id="P2_SP00167" hpos="665" vpos="1050" width="26" /> 
+      <string id="P2_ST00192" hpos="691" vpos="1015" width="167" height="33" content="verfraaid," wc="1.00" cc="0733697305" /> 
+      <sp id="P2_SP00168" hpos="857" vpos="1050" width="22" /> 
+      <string id="P2_ST00193" hpos="880" vpos="1024" width="54" height="20" content="aan" wc="1.00" cc="007" /> 
+      <sp id="P2_SP00169" hpos="934" vpos="1050" width="20" /> 
+      <string id="P2_ST00194" hpos="954" vpos="1016" width="37" height="27" content="de" wc="0.98" cc="06" /> 
+     </textline> 
+     <textline id="P2_TL00026" hpos="59" vpos="1054" width="930" height="39"> 
+      <string id="P2_ST00195" hpos="59" vpos="1054" width="169" height="30" content="machienes" wc="0.96" cc="795677087" /> 
+      <sp id="P2_SP00170" hpos="228" vpos="1083" width="13" /> 
+      <string id="P2_ST00196" hpos="241" vpos="1054" width="119" height="28" content="worden" wc="1.00" cc="463916" /> 
+      <sp id="P2_SP00171" hpos="360" vpos="1083" width="14" /> 
+      <string id="P2_ST00197" hpos="374" vpos="1054" width="182" height="37" content="belangrijke" wc="1.00" cc="45496704061" /> 
+      <sp id="P2_SP00172" hpos="556" vpos="1090" width="12" /> 
+      <string id="P2_ST00198" hpos="568" vpos="1055" width="220" height="38" content="verbeteringen" wc="1.00" cc="9317646050700" /> 
+      <sp id="P2_SP00173" hpos="788" vpos="1093" width="11" /> 
+      <string id="P2_ST00199" hpos="798" vpos="1056" width="190" height="37" content="nangebragt," wc="0.96" cc="87730476940" /> 
+     </textline> 
+     <textline id="P2_TL00027" hpos="59" vpos="1093" width="930" height="35"> 
+      <string id="P2_ST00200" hpos="59" vpos="1095" width="141" height="27" content="zoomede" wc="0.98" cc="7757308" /> 
+      <sp id="P2_SP00174" hpos="200" vpos="1122" width="20" /> 
+      <string id="P2_ST00201" hpos="220" vpos="1102" width="56" height="20" content="aan" wc="1.00" cc="075" /> 
+      <sp id="P2_SP00175" hpos="275" vpos="1122" width="32" /> 
+      <string id="P2_ST00202" hpos="307" vpos="1093" width="54" height="30" content="den" wc="1.00" cc="007" /> 
+      <sp id="P2_SP00176" hpos="361" vpos="1122" width="24" /> 
+      <string id="P2_ST00203" hpos="385" vpos="1093" width="112" height="30" content="schroef" wc="1.00" cc="5950508" /> 
+      <sp id="P2_SP00177" hpos="497" vpos="1122" width="22" /> 
+      <string id="P2_ST00204" hpos="520" vpos="1102" width="34" height="19" content="en" wc="0.98" cc="76" /> 
+      <sp id="P2_SP00178" hpos="554" vpos="1122" width="22" /> 
+      <string id="P2_ST00205" hpos="576" vpos="1093" width="37" height="30" content="de" wc="0.98" cc="93" /> 
+      <sp id="P2_SP00179" hpos="613" vpos="1122" width="32" /> 
+      <string id="P2_ST00206" hpos="645" vpos="1095" width="138" height="33" content="raderen," wc="1.00" cc="96150000" /> 
+      <sp id="P2_SP00180" hpos="783" vpos="1128" width="28" /> 
+      <string id="P2_ST00207" hpos="811" vpos="1095" width="107" height="27" content="zoodat" wc="1.00" cc="725060" /> 
+      <sp id="P2_SP00181" hpos="919" vpos="1128" width="21" /> 
+      <string id="P2_ST00208" hpos="940" vpos="1095" width="48" height="27" content="het" wc="1.00" cc="650" /> 
+     </textline> 
+     <textline id="P2_TL00028" hpos="59" vpos="1133" width="930" height="38"> 
+      <string id="P2_ST00209" hpos="59" vpos="1133" width="85" height="37" content="-&gt;cbip" wc="0.96" cc="756775" /> 
+      <sp id="P2_SP00182" hpos="144" vpos="1169" width="22" /> 
+      <string id="P2_ST00210" hpos="167" vpos="1141" width="89" height="30" content="vroeg" wc="1.00" cc="60734" /> 
+      <sp id="P2_SP00183" hpos="255" vpos="1170" width="15" /> 
+      <string id="P2_ST00211" hpos="270" vpos="1133" width="30" height="28" content="in" wc="0.98" cc="65" /> 
+      <sp id="P2_SP00184" hpos="300" vpos="1170" width="19" /> 
+      <string id="P2_ST00212" hpos="319" vpos="1133" width="50" height="28" content="het" wc="1.00" cc="606" /> 
+      <sp id="P2_SP00185" hpos="369" vpos="1170" width="22" /> 
+      <string id="P2_ST00213" hpos="391" vpos="1133" width="139" height="35" content="voorjaar" wc="1.00" cc="70740761" /> 
+      <sp id="P2_SP00186" hpos="530" vpos="1170" width="15" /> 
+      <string id="P2_ST00214" hpos="546" vpos="1134" width="104" height="37" content="gereed" wc="1.00" cc="953000" /> 
+      <sp id="P2_SP00187" hpos="650" vpos="1170" width="14" /> 
+      <string id="P2_ST00215" hpos="664" vpos="1135" width="44" height="26" content="zal" wc="1.00" cc="700" /> 
+      <sp id="P2_SP00188" hpos="707" vpos="1170" width="13" /> 
+      <string id="P2_ST00216" hpos="720" vpos="1134" width="56" height="37" content="zijn" wc="1.00" cc="7687" /> 
+      <sp id="P2_SP00189" hpos="776" vpos="1170" width="26" /> 
+      <string id="P2_ST00217" hpos="802" vpos="1143" width="45" height="19" content="om" wc="0.98" cc="79" /> 
+      <sp id="P2_SP00190" hpos="847" vpos="1170" width="25" /> 
+      <string id="P2_ST00218" hpos="872" vpos="1139" width="28" height="22" content="te" wc="0.98" cc="00" /> 
+      <sp id="P2_SP00191" hpos="900" vpos="1170" width="22" /> 
+      <string id="P2_ST00219" hpos="922" vpos="1142" width="50" height="19" content="ver" subs_type="HypPart1" subs_content="vertrekken" wc="1.00" cc="0540" /> 
+      <hyp hpos="972" vpos="1142" width="17" content="-" /> 
+     </textline> 
+     <textline id="P2_TL00029" hpos="59" vpos="1173" width="928" height="38"> 
+      <string id="P2_ST00220" hpos="59" vpos="1173" width="124" height="28" content="trekken" subs_type="HypPart2" subs_content="vertrekken" wc="1.00" cc="3375043" /> 
+      <sp id="P2_SP00192" hpos="183" vpos="1201" width="32" /> 
+      <string id="P2_ST00221" hpos="215" vpos="1181" width="35" height="19" content="en" wc="0.98" cc="32" /> 
+      <sp id="P2_SP00193" hpos="250" vpos="1201" width="27" /> 
+      <string id="P2_ST00222" hpos="278" vpos="1173" width="105" height="27" content="alsdan" wc="1.00" cc="505997" /> 
+      <sp id="P2_SP00194" hpos="383" vpos="1201" width="27" /> 
+      <string id="P2_ST00223" hpos="410" vpos="1182" width="65" height="19" content="zeer" wc="1.00" cc="7701" /> 
+      <sp id="P2_SP00195" hpos="475" vpos="1201" width="30" /> 
+      <string id="P2_ST00224" hpos="504" vpos="1173" width="209" height="38" content="vermoedelijk" wc="1.00" cc="956750707500" /> 
+      <sp id="P2_SP00196" hpos="713" vpos="1211" width="32" /> 
+      <string id="P2_ST00225" hpos="745" vpos="1183" width="57" height="19" content="aan" wc="1.00" cc="677" /> 
+      <sp id="P2_SP00197" hpos="802" vpos="1211" width="25" /> 
+      <string id="P2_ST00226" hpos="827" vpos="1174" width="35" height="27" content="de" wc="0.98" cc="07" /> 
+      <sp id="P2_SP00198" hpos="862" vpos="1211" width="21" /> 
+      <string id="P2_ST00227" hpos="883" vpos="1174" width="104" height="37" content="hoogst" wc="1.00" cc="764487" /> 
+     </textline> 
+     <textline id="P2_TL00030" hpos="58" vpos="1212" width="721" height="39"> 
+      <string id="P2_ST00228" hpos="58" vpos="1221" width="167" height="30" content="gespannen" wc="1.00" cc="638086741" /> 
+      <sp id="P2_SP00199" hpos="224" vpos="1251" width="24" /> 
+      <string id="P2_ST00229" hpos="248" vpos="1212" width="204" height="39" content="verwachting" wc="1.00" cc="90199462657" /> 
+      <sp id="P2_SP00200" hpos="452" vpos="1251" width="21" /> 
+      <string id="P2_ST00230" hpos="474" vpos="1213" width="45" height="27" content="zal" wc="1.00" cc="705" /> 
+      <sp id="P2_SP00201" hpos="519" vpos="1251" width="20" /> 
+      <string id="P2_ST00231" hpos="539" vpos="1213" width="240" height="30" content="beantwoorden." wc="1.00" cc="0497005498662" /> 
+     </textline> 
+    </textblock> 
+   </printspace> 
+  </page> 
+ </layout> 
+</alto>
