@@ -1,6 +1,9 @@
 # Place Name Disambiguation
 
-This repo contains some scripts that enable collecting NER-entities and geocodes for a corpus in a folder. The main entry point is `extract.py`, whereas `icab_parser.py` is a helper script that is not part of `extract.py`s workflow.
+This repo contains some scripts that enable collecting NER-entities and geocodes for a corpus in a folder, along ideas proposed in
+> Ardanuy, M. C., & Sporleder, C. (2017, June). Toponym disambiguation in historical documents using semantic and geographic features. In Proceedings of the 2nd international conference on digital access to textual cultural heritage (pp. 175-180).
+
+The main entry point is `extract.py`, whereas `icab_parser.py` is a helper script that is not part of `extract.py`s workflow.
 
 ## Setup
 
